@@ -570,6 +570,41 @@ footer .menu .social-network ul li a {
     transition: all 0.5s;
 }
 
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+#status.success{
+    background-color: rgb(69, 163, 69);
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(253, 18, 10);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+/* animation connect */
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
 
 /* responsive media query start */
 @media (max-width: 1104px) {

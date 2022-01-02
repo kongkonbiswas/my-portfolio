@@ -145,7 +145,7 @@
                     <div class="box">
                         <img src="images/drone.png" alt="">
                         <div class="text">Drone MarketPlace</div>
-                        <p>It's a drone selling MarketPlace. You can buy any type of drone from here</p>
+                        <p>A full-stack online-based user-friendly drone marketplace project.Ordering items will lead a user to checkout page for login</p>
                         <div class=link>
                         <a href="https://drone-marketplace-423f4.web.app"> Website</a>
                         <a  href="https://github.com/kongkonbiswas/drone-marketplace-client">Front-End</a>
@@ -156,8 +156,8 @@
                 <div class="card">
                     <div class="box">
                         <img src="images/hospital.png" alt="">
-                        <div class="text">Riders-Planet</div>
-                        <p>A single page Website that is offering vehicle service to customer for booking including pickup location,destination and map option.</p>
+                        <div class="text">United Hospital</div>
+                        <p>This site have so many section. It's a hospital based website. Using so many colours and card design it's looks cool.</p>
                         <div class=link>
                         <a href="https://healthcare-webside-kongkon.netlify.app/">Website</a>
                         <a  href="https://github.com/kongkonbiswas/healthcare-website">Github</a>
@@ -167,8 +167,8 @@
                 <div class="card">
                     <div class="box">
                         <img src="images/writer.png" alt="">
-                        <div class="text">Grocery-Station</div>
-                        <p>A full-stack online-based user-friendly grocery shop project.Ordering items will lead a user to checkout page for login</p>
+                        <div class="text">Writer Hire</div>
+                        <p>This site is full of writer . You can hire someone . It will show you in modal. Cost will add in grand total. You also see how many writer you selected.</p>
                             <div class=link>
                         <a href="https://writer-hire-simple-kongkon.netlify.app/">Website</a>
                         <a href="https://github.com/kongkonbiswas/writer-hiring-website">Github</a>
@@ -252,25 +252,28 @@
                     </div>
                 </div>
                 <div class="column right">
+                    
                     <div class="text">Message me</div>
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" id="fromName" class="fullname" placeholder="Name">
-                            </div>
-                            <div class="field email">
-                                <input type="text" id="email" class="email-input" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" id="subject" class="subject" placeholder="Subject">
-                        </div>
-                        <div class="field textarea">
-                            <textarea id="msg" class="message" cols="30" rows="10" placeholder="Message.."></textarea>
-                        </div>
+                        <form  action="https://formspree.io/f/xqknalrn" method="POST" enctype="multipart/form-data">
+                        <label class="field name">
+                            Your Name:
+                             <input id="fromName" class="fullname" type="name" name="name">
+                        </label>
+                        <label class="field email">
+                            Your email:
+                             <input type="email" id="email" class="email-input"  name="_replyto">
+                        </label>
+                        <label class="field textarea">
+                            Your message:
+                            <textarea id="msg" class="message" cols="30" rows="10" name="message"></textarea>
+                        </label>
                         <div class="button-area">
                             <button onclick='sendMail()' class="send-msg" type="submit" name="send">Send message</button>
                         </div>
-                
+                        </form>
+                        <!-- <div id="status">Success</div> -->
+                    </div>
+                    
                 </div>
             </div>
         </div>       
